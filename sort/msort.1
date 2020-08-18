@@ -1,0 +1,45 @@
+./" Manpage for msort.
+./" Contact xxx 
+.TH msort 1 "15 Aug 2020" "1.0" "msort man page"
+.SH NAME
+msort \- sort lines of test of file
+.SH SYNOPSIS
+msort [OPTIONS] FILE ...
+
+.SH DESCRIPTION
+Takes a file as input and sort the lines by column and write the sorted lines to startard output or FILE
+
+.SH OPTIONS
+.B 
+.IP "-n, --numeric"
+compare acording to numerical value
+.B
+.IP "-r, --reverse"
+Write result in reverse order
+.B
+.IP "-o, --output=FILE"
+Write result to FILE instead of standard output
+.B
+.IP "-i, --input=FILE"
+Read input from FILE
+.B
+.IP "-c, --column=N"
+Sort via column: N gives location
+.B
+.IP "-k, --keyonly"
+Write only the sorted values
+.B
+.IP "-v, --version"
+Output version information and exit
+.B
+.IP "-h, --help"
+Disply help text amd exit
+
+.SH AUTHOR
+Written by Mikael Leuf.
+
+.SH TO DO
+sort roman numerals support
+
+.SH SEE ALSO
+.BR sort (1)
